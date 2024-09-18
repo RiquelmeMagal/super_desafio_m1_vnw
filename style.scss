@@ -1,0 +1,84 @@
+body {
+  font-family: 'Kodchasan', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; // Fundo cinza claro
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 19px;
+
+  .logo {
+    width: 181px;
+    height: 65px;
+  }
+}
+
+main {
+  margin: 0 auto;
+
+  .cuidado {
+    margin: 40px 0;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+      color: #000000;
+      margin: 10px 0;
+      padding: 10px;
+    }
+  }
+
+  .produto-destaque {
+    margin-top: 20px;
+
+    .imagem-destaque {
+      width: 100%;
+      max-width: 340px;
+      height: auto;
+      border-radius: 20px 0 0 0;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 600; // Peso da fonte aumentado
+      line-height: 31.2px;
+      margin: 16px 0;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+      margin: 0 16px;
+    }
+  }
+
+  .favoritos {
+    h3 {
+      font-size: 20px;
+      font-weight: 600; // Peso da fonte aumentado
+      line-height: 26px;
+      margin: 20px 0;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+
+      .galeria-imagem {
+        flex: 0 1 calc(50% - 20px); // Ajusta para 2x2 com maior espaçamento
+        max-width: 120px; // Limita a largura máxima para imagens menores
+        height: auto; // Mantém a proporção
+        margin: 10px; // Maior espaçamento em volta da imagem
+        border-radius: 10px; // Borda arredondada
+      }
+    }
+  }
+}

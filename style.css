@@ -1,0 +1,72 @@
+body {
+  font-family: "Kodchasan", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 19px;
+}
+header .logo {
+  width: 181px;
+  height: 65px;
+}
+
+main {
+  margin: 0 auto;
+}
+main .cuidado {
+  margin: 40px 0;
+}
+main .cuidado h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+  margin: 10px 0;
+  padding: 10px;
+}
+main .produto-destaque {
+  margin-top: 20px;
+}
+main .produto-destaque .imagem-destaque {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 20px 0 0 0;
+}
+main .produto-destaque h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  margin: 16px 0;
+}
+main .produto-destaque p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 16px;
+}
+main .favoritos h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 20px 0;
+}
+main .favoritos .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+main .favoritos .galeria .galeria-imagem {
+  flex: 0 1 calc(50% - 20px);
+  max-width: 120px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
