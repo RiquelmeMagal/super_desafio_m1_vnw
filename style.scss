@@ -1,84 +1,99 @@
-body {
-  font-family: 'Kodchasan', sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0; // Fundo cinza claro
-  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kodchasan", sans-serif;
+  background-color: #EFEEF3;
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  padding-top: 19px;
+  width: auto;
+  height: 500px;
+}
 
-  .logo {
-    width: 181px;
-    height: 65px;
-  }
+.imagembackground img {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  background-color: #EFEEF3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 67px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 10px;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  font-size: 20px;
 }
 
 main {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-  .cuidado {
-    margin: 40px 0;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 2px;
+}
 
-    h2 {
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 26px;
-      color: #000000;
-      margin: 10px 0;
-      padding: 10px;
-    }
-  }
+.container .box1 {
+  width: 70%;
+  text-align: center;
+  font-size: 25px;
+  padding: 0 50px;
+}
 
-  .produto-destaque {
-    margin-top: 20px;
+.container .box1 h3 {
+  font-weight: 500;
+  font-size: 30px;
+  padding: 10px;
+}
 
-    .imagem-destaque {
-      width: 100%;
-      max-width: 340px;
-      height: auto;
-      border-radius: 20px 0 0 0;
-    }
+.container .box1 p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
 
-    h3 {
-      font-size: 24px;
-      font-weight: 600; // Peso da fonte aumentado
-      line-height: 31.2px;
-      margin: 16px 0;
-    }
+.produto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 70px 0 30px;
+}
 
-    p {
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 26px;
-      margin: 0 16px;
-    }
-  }
+.produto h3 {
+  font-size: 30px;
+  width: 50%;
+  font-weight: 400;
+}
 
-  .favoritos {
-    h3 {
-      font-size: 20px;
-      font-weight: 600; // Peso da fonte aumentado
-      line-height: 26px;
-      margin: 20px 0;
-    }
-
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 0 auto;
-
-      .galeria-imagem {
-        flex: 0 1 calc(50% - 20px); // Ajusta para 2x2 com maior espaçamento
-        max-width: 120px; // Limita a largura máxima para imagens menores
-        height: auto; // Mantém a proporção
-        margin: 10px; // Maior espaçamento em volta da imagem
-        border-radius: 10px; // Borda arredondada
-      }
-    }
-  }
+.produto figure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: flex-start;
 }

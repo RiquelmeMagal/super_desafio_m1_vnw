@@ -1,72 +1,99 @@
-body {
-  font-family: "Kodchasan", sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
-  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kodchasan", sans-serif;
+  background-color: #EFEEF3;
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  padding-top: 19px;
+  width: auto;
+  height: 500px;
 }
-header .logo {
-  width: 181px;
-  height: 65px;
+
+.imagembackground img {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  background-color: #EFEEF3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 67px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 10px;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  font-size: 20px;
 }
 
 main {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-main .cuidado {
-  margin: 40px 0;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 2px;
 }
-main .cuidado h2 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #000000;
-  margin: 10px 0;
+
+.container .box1 {
+  width: 70%;
+  text-align: center;
+  font-size: 25px;
+  padding: 0 50px;
+}
+
+.container .box1 h3 {
+  font-weight: 500;
+  font-size: 30px;
   padding: 10px;
 }
-main .produto-destaque {
-  margin-top: 20px;
-}
-main .produto-destaque .imagem-destaque {
-  width: 100%;
-  max-width: 340px;
-  height: auto;
-  border-radius: 20px 0 0 0;
-}
-main .produto-destaque h3 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 31.2px;
-  margin: 16px 0;
-}
-main .produto-destaque p {
+
+.container .box1 p {
   font-size: 20px;
+  letter-spacing: 2px;
   font-weight: 400;
-  line-height: 26px;
-  margin: 0 16px;
 }
-main .favoritos h3 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 26px;
-  margin: 20px 0;
+
+.produto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 70px 0 30px;
 }
-main .favoritos .galeria {
+
+.produto h3 {
+  font-size: 30px;
+  width: 50%;
+  font-weight: 400;
+}
+
+.produto figure {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-}
-main .favoritos .galeria .galeria-imagem {
-  flex: 0 1 calc(50% - 20px);
-  max-width: 120px;
-  height: auto;
-  margin: 10px;
-  border-radius: 10px;
+  gap: 3rem;
+  justify-content: flex-start;
 }/*# sourceMappingURL=style.css.map */
